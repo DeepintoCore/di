@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Into Core</title>
+<link rel = "stylesheet" href = "styles.css"
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 50px;
+    border-bottom: 2px solid #222;
+}
+
+.banner h1 {
+    font-size: 48px;
+}
+
+.banner h2 {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Description */
+.description {
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Video Layout */
+.video-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.video-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Thumbnail */
+.video-thumb {
+    width: 560px;
+    border-radius: 12px;
+    border: 2px solid #333;
+    transition: 0.3s;
+}
+
+.video-thumb:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px red;
+}
+
+/* Details */
+.video-details {
+    max-width: 400px;
+}
+
+.video-details h3 {
+    font-size: 24px;
+}
+
+.video-details p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* Subscribe Section */
+.subscribe {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 2px solid #222;
+    margin-top: 100px;
+}
+
+.sub-space {
+    height: 25px; /* SPACE BETWEEN TEXT & BUTTON */
+}
+
+.subscribe button {
+    background: red;
+    border: none;
+    padding: 16px 50px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 0 15px red;
+    transition: 0.3s;
+}
+
+.subscribe button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px red;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .video-box { flex-direction: column; }
+    .video-thumb { width: 100%; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Banner -->
+<div class="banner">
+    <h1>Deep Into Core</h1>
+    <h2>Always "Deep Into Core" Songs🌌</h2>
+</div>
+
+<!-- Description -->
+<div class="description">
+Welcome to <b>Deep Into Core</b>.  
+We upload deep, emotional, and vibing songs that touch your soul and create powerful feelings.  
+Put your headphones on and dive deep into the core.
+</div>
+
+<!-- Videos -->
+<div class="video-container">
+
+<!-- Spiritual Ride -->
+<div class="video-box">
+    <a href="https://youtu.be/msxhcdpYePY" target="_blank">
+        <img class="video-thumb" src="https://img.youtube.com/vi/msxhcdpYePY/maxresdefault.jpg">
+    </a>
+
+    <div class="video-details">
+        <h3>Spiritual Ride</h3>
+        <p><b>Deep Into Core - The Spiritual Ride (Official)</b></p>
+        <p>A deep spiritual journey through sound and emotion.</p>
+    </div>
+</div>
+
+<!-- Ride or Die -->
+<div class="video-box reverse">
+    <a href="https://youtu.be/5P_vDjPrRvo" target="_blank">
+        <img class="video-thumb" src="https://img.youtube.com/vi/5P_vDjPrRvo/maxresdefault.jpg">
+    </a>
+
+    <div class="video-details">
+        <h3>Ride or Die</h3>
+        <p><b>Deep Into Core - Ride or Die (Official)</b></p>
+        <p>Dark cinematic core energy with powerful emotions.</p>
+    </div>
+</div>
+
+</div>
+
+<!-- Subscribe Section -->
+<div class="subscribe">
+    <p>If you like our content, you can support us by subscribing.</p>
+
+    <div class="sub-space"></div>
+
+    <button onclick="window.open('https://www.youtube.com/@DeepIntoCore')">
+        Subscribe Now
+    </button>
+</div>
+
+</body>
+</html>
